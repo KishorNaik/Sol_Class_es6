@@ -4,7 +4,7 @@ import * as u from "../ClassDemo/users";
 // Defualt Import
 import funcDemo3 from "../ClassDemo/users";
 
-import $ from "jquery";
+//import $ from "jquery";
 
 
 const _name=Symbol("name"); // Private Variable
@@ -37,7 +37,7 @@ export class userMain{
         funcDemo3();
        
         // Using Jquery
-        $("#divObj").html("Hello Jquery");
+        //$("#divObj").html("Hello Jquery");
     }
 
     
