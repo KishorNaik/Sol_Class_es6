@@ -6,7 +6,10 @@ module.exports = {
     mode: "development",
     entry: {
        users:"./src/ClassDemo/users.js",
-       userMain:"./src/ClassDemo/usersMain.js"
+       userMain:"./src/ClassDemo/usersMain.js",
+       parent:"./src/Inheritance/parent.js",
+       child:"./src/Inheritance/child.js",
+       staticDemo:"./src/StaticDemo/staticDemo.js"
     },
     output: {
         publicPath: "./dist/",
