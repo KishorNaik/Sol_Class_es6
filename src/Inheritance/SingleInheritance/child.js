@@ -1,4 +1,4 @@
-import {parent} from "../Inheritance/parent";
+import {parent} from "../SingleInheritance/parent";
 
 export class child extends parent{
 

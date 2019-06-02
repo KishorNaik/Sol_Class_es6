@@ -7,9 +7,16 @@ module.exports = {
     entry: {
        users:"./src/ClassDemo/users.js",
        userMain:"./src/ClassDemo/usersMain.js",
-       parent:"./src/Inheritance/parent.js",
-       child:"./src/Inheritance/child.js",
-       staticDemo:"./src/StaticDemo/staticDemo.js"
+       parent:"./src/Inheritance/SingleInheritance/parent.js",
+       child:"./src/Inheritance/SingleInheritance/child.js",
+       staticDemo:"./src/StaticDemo/staticDemo.js",
+       A:"./src/Inheritance/MultilevelInheritance/A.js",
+       B:"./src/Inheritance/MultilevelInheritance/B.js",
+       C:"./src/Inheritance/MultilevelInheritance/C.js",
+       D:"./src/Inheritance/HierarchicalInheritance/D.js",
+       E:"./src/Inheritance/HierarchicalInheritance/E.js",
+       parentPoly:"./src/Polymorphisam/parent.js",
+       childPoly:"./src/Polymorphisam/child.js"
     },
     output: {
         publicPath: "./dist/",

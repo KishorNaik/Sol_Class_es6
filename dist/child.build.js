@@ -82,32 +82,32 @@ var appGlobal =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/Inheritance/child.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/Inheritance/SingleInheritance/child.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/Inheritance/child.js":
-/*!**********************************!*\
-  !*** ./src/Inheritance/child.js ***!
-  \**********************************/
+/***/ "./src/Inheritance/SingleInheritance/child.js":
+/*!****************************************************!*\
+  !*** ./src/Inheritance/SingleInheritance/child.js ***!
+  \****************************************************/
 /*! exports provided: child */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"child\", function() { return child; });\n/* harmony import */ var _Inheritance_parent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Inheritance/parent */ \"./src/Inheritance/parent.js\");\n\r\n\r\nclass child extends _Inheritance_parent__WEBPACK_IMPORTED_MODULE_0__[\"parent\"]{\r\n\r\n    constructor(name){\r\n        super(name);\r\n    }\r\n\r\n\r\n    childMethod(){\r\n        // call base class Method\r\n        super.parentMethod();\r\n    }\r\n\r\n    parentOverrideMethod(){\r\n        super.parentOverrideMethod(); // Call Parent Object\r\n        console.log(\"Override method call in child Method\");\r\n    }\r\n\r\n}\r\n\r\nlet childObj=new child(\"Hello Constructor Overriding\");\r\nchildObj.parentOverrideMethod();\r\n\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/child.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"child\", function() { return child; });\n/* harmony import */ var _SingleInheritance_parent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../SingleInheritance/parent */ \"./src/Inheritance/SingleInheritance/parent.js\");\n\r\n\r\nclass child extends _SingleInheritance_parent__WEBPACK_IMPORTED_MODULE_0__[\"parent\"]{\r\n\r\n    constructor(name){\r\n        super(name);\r\n    }\r\n\r\n\r\n    childMethod(){\r\n        // call base class Method\r\n        super.parentMethod();\r\n    }\r\n\r\n    parentOverrideMethod(){\r\n        super.parentOverrideMethod(); // Call Parent Object\r\n        console.log(\"Override method call in child Method\");\r\n    }\r\n\r\n}\r\n\r\nlet childObj=new child(\"Hello Constructor Overriding\");\r\nchildObj.parentOverrideMethod();\r\n\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/SingleInheritance/child.js?");
 
 /***/ }),
 
-/***/ "./src/Inheritance/parent.js":
-/*!***********************************!*\
-  !*** ./src/Inheritance/parent.js ***!
-  \***********************************/
+/***/ "./src/Inheritance/SingleInheritance/parent.js":
+/*!*****************************************************!*\
+  !*** ./src/Inheritance/SingleInheritance/parent.js ***!
+  \*****************************************************/
 /*! exports provided: parent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"parent\", function() { return parent; });\nclass parent{\r\n\r\n    constructor(name){\r\n        console.log(name);\r\n    }\r\n\r\n    parentMethod(){\r\n        console.log(\"Parent Method\");\r\n    }\r\n\r\n    // Override Demo\r\n    parentOverrideMethod(){\r\n        console.log(\"Parent Override Method\");\r\n    }\r\n\r\n  \r\n\r\n}\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/parent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"parent\", function() { return parent; });\nclass parent{\r\n\r\n    constructor(name){\r\n        console.log(name);\r\n    }\r\n\r\n    parentMethod(){\r\n        console.log(\"Parent Method\");\r\n    }\r\n\r\n    // Override Demo\r\n    parentOverrideMethod(){\r\n        console.log(\"Parent Override Method\");\r\n    }\r\n\r\n  \r\n\r\n}\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/SingleInheritance/parent.js?");
 
 /***/ })
 

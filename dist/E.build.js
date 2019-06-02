@@ -82,20 +82,32 @@ var appGlobal =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/Inheritance/SingleInheritance/parent.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/Inheritance/HierarchicalInheritance/E.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/Inheritance/SingleInheritance/parent.js":
-/*!*****************************************************!*\
-  !*** ./src/Inheritance/SingleInheritance/parent.js ***!
-  \*****************************************************/
-/*! exports provided: parent */
+/***/ "./src/Inheritance/HierarchicalInheritance/E.js":
+/*!******************************************************!*\
+  !*** ./src/Inheritance/HierarchicalInheritance/E.js ***!
+  \******************************************************/
+/*! exports provided: E */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"parent\", function() { return parent; });\nclass parent{\r\n\r\n    constructor(name){\r\n        console.log(name);\r\n    }\r\n\r\n    parentMethod(){\r\n        console.log(\"Parent Method\");\r\n    }\r\n\r\n    // Override Demo\r\n    parentOverrideMethod(){\r\n        console.log(\"Parent Override Method\");\r\n    }\r\n\r\n  \r\n\r\n}\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/SingleInheritance/parent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"E\", function() { return E; });\n/* harmony import */ var _MultilevelInheritance_A__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../MultilevelInheritance/A */ \"./src/Inheritance/MultilevelInheritance/A.js\");\n\r\n\r\nclass E extends _MultilevelInheritance_A__WEBPACK_IMPORTED_MODULE_0__[\"A\"]{\r\n\r\n    eMethod(){\r\n        console.log(\"E Method\");\r\n    }\r\n\r\n    // @Override\r\n    aMethod(){\r\n        console.log(\"a Method override in e class\");\r\n    }\r\n\r\n}\r\n\r\nlet eObj=new E();\r\n    eObj.aMethod();\r\n    eObj.eMethod();\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/HierarchicalInheritance/E.js?");
+
+/***/ }),
+
+/***/ "./src/Inheritance/MultilevelInheritance/A.js":
+/*!****************************************************!*\
+  !*** ./src/Inheritance/MultilevelInheritance/A.js ***!
+  \****************************************************/
+/*! exports provided: A */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"A\", function() { return A; });\nclass A {\r\n\r\n    constructor(){\r\n        console.log(\"A Constructor\");\r\n    }\r\n\r\n    aMethod(){\r\n        console.log(\"A Method\");\r\n    }\r\n\r\n}\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/MultilevelInheritance/A.js?");
 
 /***/ })
 

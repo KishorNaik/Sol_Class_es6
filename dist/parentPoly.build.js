@@ -82,20 +82,20 @@ var appGlobal =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/Inheritance/SingleInheritance/parent.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/Polymorphisam/parent.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/Inheritance/SingleInheritance/parent.js":
-/*!*****************************************************!*\
-  !*** ./src/Inheritance/SingleInheritance/parent.js ***!
-  \*****************************************************/
+/***/ "./src/Polymorphisam/parent.js":
+/*!*************************************!*\
+  !*** ./src/Polymorphisam/parent.js ***!
+  \*************************************/
 /*! exports provided: parent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"parent\", function() { return parent; });\nclass parent{\r\n\r\n    constructor(name){\r\n        console.log(name);\r\n    }\r\n\r\n    parentMethod(){\r\n        console.log(\"Parent Method\");\r\n    }\r\n\r\n    // Override Demo\r\n    parentOverrideMethod(){\r\n        console.log(\"Parent Override Method\");\r\n    }\r\n\r\n  \r\n\r\n}\n\n//# sourceURL=webpack://appGlobal/./src/Inheritance/SingleInheritance/parent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"parent\", function() { return parent; });\nclass parent{\r\n\r\n    parentMethod(){\r\n        console.log(\"parent Method\");\r\n    }\r\n}\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://appGlobal/./src/Polymorphisam/parent.js?");
 
 /***/ })
 
